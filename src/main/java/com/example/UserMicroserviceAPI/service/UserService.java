@@ -23,6 +23,9 @@ public class UserService {
         }
         User user = new User();
         user.setUsername(signupRequest.getUsername());
+        user.setFirstname(signupRequest.getFirstname());
+        user.setLastname(signupRequest.getLastname());
+        user.setPhone(signupRequest.getPhone());
         user.setEmail(signupRequest.getEmail());
         user.setEnabled(signupRequest.getEnabled());
         user.setAuthority(signupRequest.getAuthorityID());
