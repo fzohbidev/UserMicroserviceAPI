@@ -7,9 +7,9 @@ public class LoginResponse {
     //response structure
     private String jwtToken;
     private String username;
-    private List<String> roles;
+    private String roles;
 
-    public LoginResponse(String username, List<String> roles, String jwtToken) {
+    public LoginResponse(String username, String roles, String jwtToken) {
         this.jwtToken = jwtToken;
         this.username = username;
         this.roles = roles;
@@ -31,11 +31,11 @@ public class LoginResponse {
         this.username = username;
     }
 
-    public List<String> getRoles() {
+    public String getRoles() {
         return roles;
     }
 
-    public void setRoles(List<String> roles) {
+    public void setRoles(String roles) {
         this.roles = roles;
     }
 }
